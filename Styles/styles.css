@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Tahoma;
+}
+
+ul {
+    list-style: none;
+}
+
+#nav {
+    height: 40px;
+    font-size: 14px;
+    color: white;
+    line-height: 40px;
+    font-weight: 600;
+    background-color: #ffa00e;
+}
+
+/* menu c1 */
+#menu>li {
+    position: relative;
+    float: left;
+    padding: 0px 50px;
+    border-right: 2px solid rgb(197, 186, 186);
+}
+
+#menu li {
+    cursor: pointer;
+}
+
+#menu li:hover {
+    color: black;
+}
+
+/* menu c2 tro di */
+#menu ul {
+    display: none;
+    position: absolute;
+    background-color: #ffa00e;
+    color: white;
+    left: 0px;
+    top: 35px;
+    min-width: 200px;
+}
+
+#menu ul li {
+    padding-left: 10px;
+    border-bottom: #CCCCCC solid 1px;
+}
+
+
+#menu ul ul {
+    left: 100%;
+    top: 75%;
+}
+
+#menu ul li:hover {
+    background: #ff8409;
+}
+
+
+#menu li:hover>ul {
+    display: block;
+}
+
+#content {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#content>div {
+    margin-bottom: 25px;
+}
+
+.border {
+    border: solid 2px #CCCCCC;
+}
+
+#bar-right,
+#bar-right2 {
+    width: 250px;
+    margin-right: 10px;
+}
+
+#bar-right h4,
+#bar-right2 h4 {
+    background-color: #ffa00e;
+    color: white;
+    padding-left: 5px;
+    line-height: 40px;
+}
+
+#bar-right ul {
+    margin: 0 5px 15px;
+}
+
+#bar-right ul li {
+    background-color: #e5E5E5;
+    margin-top: 5px;
+    padding-left: 10px;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.sub-content {
+    max-width: 1193px;
+    display: flex;
+}
+
+.sub-content .noidung {
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.sub-content h3 {
+    padding-top: 50px;
+
+}
+
+.m-height {
+    max-height: 170px;
+}
+
+#bar-right2 ul li {
+    margin: 5px;
+}
+
+#bar-right2 input {
+    background-color: #d7cbcb;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70px;
+}
+
+.noidung2 {
+    width: 25%;
+}
+
+.noidung2 img {
+    height: 190px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.m-width {
+    min-width: 1193px;
+    padding-bottom: 10px;
+}
+
+.noidung2 p {
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+#footer {
+    height: 40px;
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    background-color: #ffa00e;
+    padding: 5px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#footer ul {
+    text-align: center;
+}
+
+#footer ul li {
+    display: inline;
+    padding-right: 7px;
+    border-right: solid 2px black;
+}
+
+.no-bor {
+    border: none !important;
+}
